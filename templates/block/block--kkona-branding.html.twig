@@ -1,0 +1,15 @@
+
+
+{% extends "block.html.twig" %}
+
+{% block content %}
+<div class="col-2">
+  {% if site_logo %}
+    <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">
+      <img style="width:100%;" src="{{ site_logo }}" alt="{{ 'Home'|t }}" />
+    </a>
+  {% endif %}
+</div>
+{% endblock %}
+
+
